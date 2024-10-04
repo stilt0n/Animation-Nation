@@ -23,11 +23,11 @@ jobs:
       - name: Generate cards.json
         run: node generators/generateCards.js
 
-      # Configure Git
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+      # # Configure Git
+      # - name: Configure Git
+      #   run: |
+      #     git config --global user.name "GitHub Actions"
+      #     git config --global user.email "actions@github.com"
 
       # Check if there are changes in public/cards.json
       - name: Check for changes
